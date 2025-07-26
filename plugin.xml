@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension point="org.eclipse.ui.commands">
+		<command
+			id="com.codicefun.tc.rac.command.TestPreferenceUtilCommand"
+			name="TestPreferenceUtil"
+		/>
+		<command
+			id="com.codicefun.tc.rac.command.TestItemUtilCommand"
+			name="TestItemUtil"
+		/>
+		<command
+			id="com.codicefun.tc.rac.command.TestSessionUtilCommand"
+			name="TestSessionUtil"
+		/>
+		<command
+			id="com.codicefun.tc.rac.command.TestRevisionUtilCommand"
+			name="TestRevisionUtil"
+		/>
+		<command
+            id="com.codicefun.tc.rac.command.TestDatasetUtilCommand"
+            name="TestDatasetUtil"
+        />
+        <command
+            id="com.codicefun.tc.rac.command.TestCommand"
+            name="Test"
+        />
+	</extension>
+
+	<extension point="org.eclipse.ui.handlers">
+		<handler
+			commandId="com.codicefun.tc.rac.command.TestPreferenceUtilCommand"
+			class="com.codicefun.tc.rac.handler.TestPreferenceUtilHandler"
+		/>
+		<handler
+			commandId="com.codicefun.tc.rac.command.TestItemUtilCommand"
+			class="com.codicefun.tc.rac.handler.TestItemUtilHandler"
+		/>
+		<handler
+			commandId="com.codicefun.tc.rac.command.TestSessionUtilCommand"
+			class="com.codicefun.tc.rac.handler.TestSessionUtilHandler"
+		/>
+		<handler
+			commandId="com.codicefun.tc.rac.command.TestRevisionUtilCommand"
+			class="com.codicefun.tc.rac.handler.TestRevisionUtilHandler"
+		/>
+		<handler
+            commandId="com.codicefun.tc.rac.command.TestDatasetUtilCommand"
+            class="com.codicefun.tc.rac.handler.TestDatasetUtilHandler"
+        />
+        <handler
+            commandId="com.codicefun.tc.rac.command.TestCommand"
+            class="com.codicefun.tc.rac.handler.TestHandler"
+        />
+	</extension>
+   
+   	<extension point="org.eclipse.ui.menus">
+		<menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+			<menu id="com.codicefun.tc.rac.menu.test" label="Test">
+				<command commandId="com.codicefun.tc.rac.command.TestPreferenceUtilCommand" />
+				<command commandId="com.codicefun.tc.rac.command.TestItemUtilCommand" />
+				<command commandId="com.codicefun.tc.rac.command.TestSessionUtilCommand" />
+				<command commandId="com.codicefun.tc.rac.command.TestRevisionUtilCommand" />
+				<command commandId="com.codicefun.tc.rac.command.TestDatasetUtilCommand" />
+                <command commandId="com.codicefun.tc.rac.command.TestCommand" />
+			</menu>
+		</menuContribution>
+	</extension>
+	
+</plugin>
