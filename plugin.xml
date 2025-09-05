@@ -4,67 +4,67 @@
 
 	<extension point="org.eclipse.ui.commands">
 		<command
-			id="com.codicefun.tc.rac.command.TestPreferenceUtilCommand"
+			id="com.xcplm.tc.rac.command.TestPreferenceUtilCommand"
 			name="TestPreferenceUtil"
 		/>
 		<command
-			id="com.codicefun.tc.rac.command.TestItemUtilCommand"
+			id="com.xcplm.tc.rac.command.TestItemUtilCommand"
 			name="TestItemUtil"
 		/>
 		<command
-			id="com.codicefun.tc.rac.command.TestSessionUtilCommand"
+			id="com.xcplm.tc.rac.command.TestSessionUtilCommand"
 			name="TestSessionUtil"
 		/>
 		<command
-			id="com.codicefun.tc.rac.command.TestRevisionUtilCommand"
+			id="com.xcplm.tc.rac.command.TestRevisionUtilCommand"
 			name="TestRevisionUtil"
 		/>
 		<command
-            id="com.codicefun.tc.rac.command.TestDatasetUtilCommand"
+            id="com.xcplm.tc.rac.command.TestDatasetUtilCommand"
             name="TestDatasetUtil"
         />
         <command
-            id="com.codicefun.tc.rac.command.TestCommand"
+            id="com.xcplm.tc.rac.command.TestCommand"
             name="Test"
         />
 	</extension>
 
 	<extension point="org.eclipse.ui.handlers">
 		<handler
-			commandId="com.codicefun.tc.rac.command.TestPreferenceUtilCommand"
-			class="com.codicefun.tc.rac.handler.TestPreferenceUtilHandler"
+			commandId="com.xcplm.tc.rac.command.TestPreferenceUtilCommand"
+			class="com.xcplm.tc.rac.handler.TestPreferenceUtilHandler"
 		/>
 		<handler
-			commandId="com.codicefun.tc.rac.command.TestItemUtilCommand"
-			class="com.codicefun.tc.rac.handler.TestItemUtilHandler"
+			commandId="com.xcplm.tc.rac.command.TestItemUtilCommand"
+			class="com.xcplm.tc.rac.handler.TestItemUtilHandler"
 		/>
 		<handler
-			commandId="com.codicefun.tc.rac.command.TestSessionUtilCommand"
-			class="com.codicefun.tc.rac.handler.TestSessionUtilHandler"
+			commandId="com.xcplm.tc.rac.command.TestSessionUtilCommand"
+			class="com.xcplm.tc.rac.handler.TestSessionUtilHandler"
 		/>
 		<handler
-			commandId="com.codicefun.tc.rac.command.TestRevisionUtilCommand"
-			class="com.codicefun.tc.rac.handler.TestRevisionUtilHandler"
+			commandId="com.xcplm.tc.rac.command.TestRevisionUtilCommand"
+			class="com.xcplm.tc.rac.handler.TestRevisionUtilHandler"
 		/>
 		<handler
-            commandId="com.codicefun.tc.rac.command.TestDatasetUtilCommand"
-            class="com.codicefun.tc.rac.handler.TestDatasetUtilHandler"
+            commandId="com.xcplm.tc.rac.command.TestDatasetUtilCommand"
+            class="com.xcplm.tc.rac.handler.TestDatasetUtilHandler"
         />
         <handler
-            commandId="com.codicefun.tc.rac.command.TestCommand"
-            class="com.codicefun.tc.rac.handler.TestHandler"
+            commandId="com.xcplm.tc.rac.command.TestCommand"
+            class="com.xcplm.tc.rac.handler.TestHandler"
         />
 	</extension>
    
    	<extension point="org.eclipse.ui.menus">
 		<menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=additions">
-			<menu id="com.codicefun.tc.rac.menu.test" label="Test">
-				<command commandId="com.codicefun.tc.rac.command.TestPreferenceUtilCommand" />
-				<command commandId="com.codicefun.tc.rac.command.TestItemUtilCommand" />
-				<command commandId="com.codicefun.tc.rac.command.TestSessionUtilCommand" />
-				<command commandId="com.codicefun.tc.rac.command.TestRevisionUtilCommand" />
-				<command commandId="com.codicefun.tc.rac.command.TestDatasetUtilCommand" />
-                <command commandId="com.codicefun.tc.rac.command.TestCommand" />
+			<menu id="com.xcplm.tc.rac.menu.test" label="Test">
+				<command commandId="com.xcplm.tc.rac.command.TestPreferenceUtilCommand" />
+				<command commandId="com.xcplm.tc.rac.command.TestItemUtilCommand" />
+				<command commandId="com.xcplm.tc.rac.command.TestSessionUtilCommand" />
+				<command commandId="com.xcplm.tc.rac.command.TestRevisionUtilCommand" />
+				<command commandId="com.xcplm.tc.rac.command.TestDatasetUtilCommand" />
+                <command commandId="com.xcplm.tc.rac.command.TestCommand" />
 			</menu>
 		</menuContribution>
 	</extension>

@@ -1,18 +1,18 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Teamcenter RAC Util
-Bundle-SymbolicName: com.codicefun.tc.rac.util;singleton:=true
+Bundle-SymbolicName: com.xcplm.tc.rac.util;singleton:=true
 Bundle-Version: 2412.0.0
-Bundle-Activator: com.codicefun.tc.rac.Activator
-Bundle-Vendor: CODICEFUN
+Bundle-Activator: com.xcplm.tc.rac.Activator
+Bundle-Vendor: XCPLM
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  com.teamcenter.rac.aifrcp,
  com.teamcenter.rac.kernel,
  com.teamcenter.rac.util,
  com.teamcenter.rac.common,
- TcSoaCoreRac;bundle-version="2412.0.0",
- TcSoaStructureManagementRac;bundle-version="2412.0.0"
+ TcSoaCoreRac,
+ TcSoaStructureManagementRac
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Automatic-Module-Name: tc.rac.util
 Bundle-ActivationPolicy: lazy
